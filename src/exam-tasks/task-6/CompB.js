@@ -9,19 +9,21 @@ function CompB() {
       <h2>CompB</h2>
       <button
         onClick={() => {
-          setCount(
-            count < 100
-              ? count + 10
-              : setMessage("Reached limit of 100, can't increase anymore")
-          );
+          setMessage('');
+          count < 100
+            ? setCount(count + 10)
+            : setMessage("Reached limit of 100, can't increase anymore");
         }}
       >
         Add
       </button>
       <button
-        onClick={() =>
-          setCount(count > 0 ? count - 10 : setMessage("Can't lower below 0 "))
-        }
+        onClick={() => {
+          setMessage('');
+          count > 0
+            ? setCount(count - 10)
+            : setMessage("Can't go lower than 0");
+        }}
       >
         Subtract
       </button>
