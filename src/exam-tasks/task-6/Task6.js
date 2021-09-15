@@ -6,12 +6,14 @@ export const CountContext = React.createContext();
 
 function Task6() {
   const [count, setCount] = useState(0);
+  const [message, setMessage] = useState('');
 
   return (
     <div>
       <h3>Task 6</h3>
       <h2>Count: {count}</h2>
-      <CountContext.Provider value={{ count, setCount }}>
+      {message && <p>{message}</p>}
+      <CountContext.Provider value={{ count, setCount, setMessage }}>
         <CompA />
         <CompB />
       </CountContext.Provider>
