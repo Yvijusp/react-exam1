@@ -7,7 +7,7 @@ import Task3 from './exam-tasks/task-3/Task3';
 import Task4 from './exam-tasks/task-4/Task4';
 import Task5 from './exam-tasks/task-5/Task5';
 import Task6 from './exam-tasks/task-6/Task6';
-import Task7 from './exam-tasks/task-7/Task7';
+// import Task7 from './exam-tasks/task-7/Task7';
 
 function App() {
   return (
